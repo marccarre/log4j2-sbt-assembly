@@ -24,3 +24,10 @@ lazy val root = (project in file(".")).
       scalaTest % Test
     )
   )
+
+mainClass in assembly := Some("example.Hello")
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", "MANIFEST.MF") => MergeStrategy.discard
+  case _ => MergeStrategy.first
+}
