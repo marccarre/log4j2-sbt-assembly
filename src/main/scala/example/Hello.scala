@@ -1,7 +1,9 @@
 package example
 
-object Hello extends Greeting with App {
-  println(greeting)
+import org.apache.logging.log4j.scala.Logging
+
+object Hello extends Greeting with App with Logging {
+  logger.info(greeting)
 }
 
 trait Greeting {
