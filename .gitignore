@@ -1,0 +1,25 @@
+*.class
+*.log
+
+# sbt:
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# IDEs:
+.classpath
+.idea/
+.project
+.settings/
+*.iml
+.scala_dependencies
+.worksheet
+
+# Misc.:
+objsets/.history
